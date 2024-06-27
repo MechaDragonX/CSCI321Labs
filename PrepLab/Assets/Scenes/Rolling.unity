@@ -251,7 +251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a1c37639fd377b24ba779d2f37b8d1e1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0049
+      value: 0.004900004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a1c37639fd377b24ba779d2f37b8d1e1, type: 3}
       propertyPath: m_LocalScale.y
@@ -259,7 +259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a1c37639fd377b24ba779d2f37b8d1e1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0049
+      value: 0.004900004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a1c37639fd377b24ba779d2f37b8d1e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -562,11 +562,12 @@ Transform:
   m_GameObject: {fileID: 1190774621}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999994, z: -0, w: 0.0011288892}
-  m_LocalPosition: {x: -0.00002165523, y: 0.5, z: 0.019168485}
+  m_LocalPosition: {x: 0.01, y: 0.5, z: -5.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2014637574}
+  - {fileID: 1711893859}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 179.871, z: 0}
 --- !u!114 &1190774627
@@ -847,13 +848,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711893856}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3411773, y: -0, z: -0, w: 0.939999}
-  m_LocalPosition: {x: 0.2, y: 2.52, z: -2.972}
+  m_LocalRotation: {x: 0.00023661598, y: -0.9777864, z: 0.20960061, w: 0.0011038131}
+  m_LocalPosition: {x: 0.003, y: 2.398, z: 2.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 39.897, y: 0, z: 0}
+  m_Father: {fileID: 1190774626}
+  m_LocalEulerAnglesHint: {x: 24.198, y: -179.871, z: 0}
 --- !u!114 &1711893860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -866,6 +867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbea316e2bc44e34e9880b721c066fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 1190774626}
 --- !u!4 &2014637574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a1c37639fd377b24ba779d2f37b8d1e1, type: 3}
@@ -875,7 +877,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1711893859}
   - {fileID: 55848156}
   - {fileID: 851445998}
   - {fileID: 1190774626}
