@@ -34,6 +34,7 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         rotation.y += Input.GetAxis("Mouse X") * lookSpeed;
+        // transform.Rotate(0.0f, rotation.y, 0.0f, Space.Self);
         transform.rotation = Quaternion.Euler(startRot + rotation);
     }
 
