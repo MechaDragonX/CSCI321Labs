@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641275, b: 0.5748151, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657892, g: 0.49641353, b: 0.57481635, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -918,7 +918,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7309484669163517069, guid: 71ad8eeb8110ba14eb4717c20523858d, type: 3}
       propertyPath: m_Name
-      value: Post
+      value: Goal
       objectReference: {fileID: 0}
     - target: {fileID: 7309484669163517069, guid: 71ad8eeb8110ba14eb4717c20523858d, type: 3}
       propertyPath: m_TagString
@@ -983,13 +983,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7309484669163517069, guid: 71ad8eeb8110ba14eb4717c20523858d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1675447033}
   m_SourcePrefab: {fileID: 100100000, guid: 71ad8eeb8110ba14eb4717c20523858d, type: 3}
 --- !u!4 &1674534584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8656729305346703263, guid: 86fb993c7ed66304bae8d2c91e2d5c31, type: 3}
   m_PrefabInstance: {fileID: 3159889308581549390}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1675447029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7309484669163517069, guid: 71ad8eeb8110ba14eb4717c20523858d, type: 3}
+  m_PrefabInstance: {fileID: 1599320412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1675447033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675447029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e021e21b01a88505a0d4c7343f5403f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1754739995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1520,6 +1540,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3933950867073031598, guid: b705c223eee09bc4a9e735625d68cbe5, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 4129109242393387861, guid: b705c223eee09bc4a9e735625d68cbe5, type: 3}
       propertyPath: moveSpeed
       value: 5
@@ -1535,6 +1559,10 @@ PrefabInstance:
     - target: {fileID: 5206158172879472660, guid: b705c223eee09bc4a9e735625d68cbe5, type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206158172879472660, guid: b705c223eee09bc4a9e735625d68cbe5, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6960340888637491029, guid: b705c223eee09bc4a9e735625d68cbe5, type: 3}
       propertyPath: m_LocalPosition.x
