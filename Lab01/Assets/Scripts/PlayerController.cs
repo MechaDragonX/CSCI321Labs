@@ -7,21 +7,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    private Vector3 startPos;
-    private Vector3 startRot = new Vector3(0.0f, 179.870636f, 0.0f);
+    // public Vector3 startPos;
+    // private Vector3 startRot = new Vector3(0.0f, 179.870636f, 0.0f);
 
     [SerializeField]
     private float moveSpeed = 5.0f;
-    [SerializeField]
-    private float rotateSpeed = 5.0f;
-    
-    [SerializeField]
-    private Transform lowestObject;
+    // [SerializeField]
+    // private float rotateSpeed = 5.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        startPos = transform.position;
+        // startPos = transform.position;
     }
 
     // Update is called once per frame
@@ -34,16 +31,10 @@ public class PlayerController : MonoBehaviour
         transform.Translate(movement * Time.deltaTime * moveSpeed);
         // transform.Rotate(movement * Time.deltaTime * rotateSpeed);
 
-        if(transform.position.y <= lowestObject.position.y - 50.0f)
-        {
-            transform.position = startPos;
-            transform.rotation = Quaternion.Euler(startRot);
-        }
+        // if(transform.position.y <= lowestObject.position.y - 50.0f)
+        // {
+        //     transform.position = startPos;
+        //     // transform.rotation = Quaternion.Euler(startRot);
+        // }
     }
-
-    // public void OnTriggerEnter(Collider victim)
-    // {
-    //     if(victim.gameObject.CompareTag("Goal"))
-    //         Application.Quit();
-    // }
 }
