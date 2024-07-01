@@ -20,6 +20,6 @@ public class EndGame : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
             Debug.Log("End");
-            Application.Quit();
+            // Application.Quit();
     }
 }
