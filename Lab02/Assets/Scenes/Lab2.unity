@@ -900,6 +900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Makoto
       objectReference: {fileID: 0}
+    - target: {fileID: 610972254880566997, guid: 00738af9399e82367a61f4ca1b8edba9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1166,7 +1170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lowestObject: {fileID: 620473356}
-  player: {fileID: 0}
+  player: {fileID: 203171535}
 --- !u!1001 &1599320412
 PrefabInstance:
   m_ObjectHideFlags: 0

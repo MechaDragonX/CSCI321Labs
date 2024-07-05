@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Tartarus.unity
+    path: Assets/Scenes/Lab2.unity
     guid: 068a202123139424eba66a3c29b620aa
   m_configObjects: {}
