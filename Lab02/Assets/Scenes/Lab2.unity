@@ -1003,7 +1003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 230049356541514863, guid: 00738af9399e82367a61f4ca1b8edba9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.013
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 230049356541514863, guid: 00738af9399e82367a61f4ca1b8edba9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1043,7 +1043,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 504534744080354329, guid: 00738af9399e82367a61f4ca1b8edba9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17
+      value: 35.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 504534744080354329, guid: 00738af9399e82367a61f4ca1b8edba9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.5
       objectReference: {fileID: 0}
     - target: {fileID: 610972254880566997, guid: 00738af9399e82367a61f4ca1b8edba9, type: 3}
       propertyPath: m_Name
@@ -1713,11 +1717,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8656729305346703263, guid: 86fb993c7ed66304bae8d2c91e2d5c31, type: 3}
   m_PrefabInstance: {fileID: 1754739995}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2058784801 stripped
+--- !u!1 &2058784800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 7998532085444318275, guid: 247db3cc7e77f7adb8fc2aed74d4337e, type: 3}
+  m_PrefabInstance: {fileID: 6478481022908499460}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058784801}
+  - component: {fileID: 2058784804}
+  - component: {fileID: 2058784803}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058784801
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 2668394488426961445, guid: 247db3cc7e77f7adb8fc2aed74d4337e, type: 3}
   m_PrefabInstance: {fileID: 6478481022908499460}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058784800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.20960076, y: -1.1641532e-10, z: 2.910383e-11, w: 0.9777871}
+  m_LocalPosition: {x: 2.7694135, y: 588.7755, z: -619.5913}
+  m_LocalScale: {x: 204.08147, y: 204.08159, z: 204.08148}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 203171535}
+  m_LocalEulerAnglesHint: {x: 24.198, y: -179.871, z: 0}
+--- !u!81 &2058784803
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4594461832033924830, guid: 247db3cc7e77f7adb8fc2aed74d4337e, type: 3}
+  m_PrefabInstance: {fileID: 6478481022908499460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058784800}
+  m_Enabled: 1
+--- !u!20 &2058784804
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3446503685083538018, guid: 247db3cc7e77f7adb8fc2aed74d4337e, type: 3}
+  m_PrefabInstance: {fileID: 6478481022908499460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058784800}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!4 &2140272260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8656729305346703263, guid: 86fb993c7ed66304bae8d2c91e2d5c31, type: 3}
