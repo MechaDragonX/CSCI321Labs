@@ -2122,8 +2122,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: c7bb90391185440ba81e4d2708e89fae, type: 2}
     - target: {fileID: 8775774147127370165, guid: f57d67962e8c98a5690e936a04baede0, type: 3}
+      propertyPath: m_UpdateMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8775774147127370165, guid: f57d67962e8c98a5690e936a04baede0, type: 3}
       propertyPath: m_WarningMessage
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8775774147127370165, guid: f57d67962e8c98a5690e936a04baede0, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         animator.SetFloat("speed", Input.GetAxis("Vertical") * moveSpeed);
+        animator.SetFloat("direction", Input.GetAxis("Horizontal"));
         
         cameraRot.y += Input.GetAxis("Mouse X") * lookSpeed;
         transform.eulerAngles = cameraRot;
