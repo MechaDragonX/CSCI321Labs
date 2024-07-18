@@ -34,13 +34,13 @@ public class Patroller : MonoBehaviour
     {
         outward = new Ray(transform.position, Vector3.forward);
         Debug.DrawRay(outward.origin, outward.direction * targetRange, Color.cyan);
-        checkRayCastHit();
+        CheckRayCastHit();
 
         if(!agent.pathPending && agent.remainingDistance < 0.5f)
             MoveToPoint();
     }
 
-    void checkRayCastHit()
+    void CheckRayCastHit()
     {
         if(Physics.Raycast(outward, out target))
         {
