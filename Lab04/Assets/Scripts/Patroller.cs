@@ -8,6 +8,9 @@ using UnityEngine.UIElements;
 public class Patroller : MonoBehaviour
 {
     [SerializeField]
+    private Animator animator;
+
+    [SerializeField]
     public Transform[] points;
     [SerializeField]
     private NavMeshAgent agent;
@@ -37,6 +40,13 @@ public class Patroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(transform.eulerAngles.y == 180.0f)
+            animator.SetInteger("yRot", 0);
+        else if(transform.eulerAngles.y < 180.0f)
+            animator.SetInteger("yRot", -1);
+        else if(transform.eulerAngles.y > 180.0f)
+            animator.SetInteger("yRot", 1);
+
         outward = new Ray(transform.position, Vector3.forward);
         Debug.DrawRay(outward.origin, outward.direction * targetRange, Color.cyan);
         CheckRayCastHit();

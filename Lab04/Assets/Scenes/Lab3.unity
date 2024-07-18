@@ -362,6 +362,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4688321994653177371, guid: e0202c1d5aa9c879096b3cadcc7df829, type: 3}
   m_PrefabInstance: {fileID: 2678127679009123283}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &221612315 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2070451295151036123, guid: e0202c1d5aa9c879096b3cadcc7df829, type: 3}
+  m_PrefabInstance: {fileID: 2678127679009123283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &221612317
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -401,6 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08dbf8c479cf22b8d9c82fe71efc90ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 221612315}
   points:
   - {fileID: 5276864783057114657}
   - {fileID: 1926065275}
