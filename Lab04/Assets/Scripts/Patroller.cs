@@ -10,9 +10,15 @@ public class Patroller : MonoBehaviour
     [SerializeField]
     private NavMeshAgent agent;
     private int destination = 0;
+
     // 0 = forward
     // 1 = backward
     int direction = 0;
+
+    private Ray outward;
+    private RaycastHit target;
+    [SerializeField]
+    private float targetRange = 2.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +32,23 @@ public class Patroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        outward = new Ray(transform.position, Vector3.forward);
+        Debug.DrawRay(outward.origin, outward.direction * targetRange, Color.cyan);
+        checkRayCastHit();
+
         if(!agent.pathPending && agent.remainingDistance < 0.5f)
             MoveToPoint();
+    }
+
+    void checkRayCastHit()
+    {
+        if(Physics.Raycast(outward, out target))
+        {
+            if(target.collider.CompareTag("Player") && target.distance <= targetRange)
+                print("COMIN' FOR YA!");
+            else
+                print("");
+        }
     }
 
     void MoveToPoint()
