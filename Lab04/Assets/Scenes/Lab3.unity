@@ -710,10 +710,21 @@ PrefabInstance:
     - target: {fileID: 2070451295151036123, guid: e0202c1d5aa9c879096b3cadcc7df829, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: addfc7aa24c2e8630a97cf3012e8170a, type: 2}
+      objectReference: {fileID: 9100000, guid: 23308c14e9e13a9959361b754656db8b, type: 2}
+    - target: {fileID: 2070451295151036123, guid: e0202c1d5aa9c879096b3cadcc7df829, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'DrunkWalkTurnL'\n\tFrom
+        animation clip 'DrunkWalk'\n\tFrom animation clip 'DrunkWalkTurnR'"
+      objectReference: {fileID: 0}
     - target: {fileID: 4688321994653177371, guid: e0202c1d5aa9c879096b3cadcc7df829, type: 3}
       propertyPath: m_Name
-      value: Big Vegas
+      value: BigVegas
       objectReference: {fileID: 0}
     - target: {fileID: 5358039661854084257, guid: e0202c1d5aa9c879096b3cadcc7df829, type: 3}
       propertyPath: m_LocalPosition.x
