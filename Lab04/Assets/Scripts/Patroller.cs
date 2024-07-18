@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Animations;
+using UnityEngine.UIElements;
 
 public class Patroller : MonoBehaviour
 {
@@ -19,6 +21,9 @@ public class Patroller : MonoBehaviour
     private RaycastHit target;
     [SerializeField]
     private float targetRange = 2.0f;
+    private bool following = false;
+    [SerializeField]
+    private Transform playerTransform;
 
     // Start is called before the first frame update
     void Start()
@@ -36,8 +41,13 @@ public class Patroller : MonoBehaviour
         Debug.DrawRay(outward.origin, outward.direction * targetRange, Color.cyan);
         CheckRayCastHit();
 
-        if(!agent.pathPending && agent.remainingDistance < 0.5f)
-            MoveToPoint();
+        if(!following)
+        {
+            if(!agent.pathPending && agent.remainingDistance < 0.5f)
+                MoveToPoint();
+        }
+        else
+            agent.destination = playerTransform.position;
     }
 
     void CheckRayCastHit()
@@ -45,9 +55,10 @@ public class Patroller : MonoBehaviour
         if(Physics.Raycast(outward, out target))
         {
             if(target.collider.CompareTag("Player") && target.distance <= targetRange)
+            {
                 print("COMIN' FOR YA!");
-            else
-                print("");
+                following = true;
+            }
         }
     }
 

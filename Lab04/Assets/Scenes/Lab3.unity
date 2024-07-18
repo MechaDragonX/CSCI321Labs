@@ -407,6 +407,8 @@ MonoBehaviour:
   - {fileID: 199393925}
   - {fileID: 848745833}
   agent: {fileID: 221612319}
+  targetRange: 2
+  playerTransform: {fileID: 2031236536}
 --- !u!195 &221612319
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1107,6 +1109,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8430297095887352930, guid: f8df3267c1839c9ae8cdee368bf105b2, type: 3}
   m_PrefabInstance: {fileID: 1926065274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2031236536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3398525311395609551, guid: f57d67962e8c98a5690e936a04baede0, type: 3}
+  m_PrefabInstance: {fileID: 9138025994757942348}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2678127679009123283
 PrefabInstance:
